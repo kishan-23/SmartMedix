@@ -1,0 +1,442 @@
+{%load static%}
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+   
+    <!-- Custom CSS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>SmartMedX</title>
+    <link href="../../static/css/style.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    
+
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">SmartMedX</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarScroll">
+                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                  <li><a class="dropdown-item" href="#">Medicine Info</a></li>
+                                  <li><a class="dropdown-item" href="#">Chat with Bot</a></li>
+                                  <!--<li><hr class="dropdown-divider"></li>-->
+                                  <li><a class="dropdown-item" href="#">Doctor's Appointment</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Contact Us</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                              </li>
+                            </ul>
+                            <form class="d-flex">
+                              <button style='margin-right:16px' class="btn btn-outline-success" type="submit">username</button>
+                              <button class="btn btn-outline-success" type="submit">Log out</button>
+                            </form>
+                          </div>
+                        </div>
+                      </nav>
+                      
+                
+                    
+                        <script src="../../static/js/jquery.min.js"></script>
+                        <script src="../../static/js/bootstrap.min.js"></script>
+                        <script src="../../static/js/scripts.js"></script>
+
+
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb bg-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Dashboard</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <div class="d-md-flex">
+                            <ol class="breadcrumb ms-auto">
+                                <li><a href="#" class="fw-normal">Dashboard</a></li>
+                            </ol>
+                            <a href="https://www.google.com" target="_blank"
+                                class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Write Article</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Three charts -->
+                <!-- ============================================================== -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Total Visit</h3>
+                            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                                <li>
+                                    <div id="sparklinedash"><canvas width="67" height="30"
+                                            style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
+                                    </div>
+                                </li>
+                                <li class="ms-auto"><span class="counter text-success">659</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Total Page Views</h3>
+                            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                                <li>
+                                    <div id="sparklinedash2"><canvas width="67" height="30"
+                                            style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
+                                    </div>
+                                </li>
+                                <li class="ms-auto"><span class="counter text-purple">869</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="white-box analytics-info">
+                            <h3 class="box-title">Unique Visitor</h3>
+                            <ul class="list-inline two-part d-flex align-items-center mb-0">
+                                <li>
+                                    <div id="sparklinedash3"><canvas width="67" height="30"
+                                            style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
+                                    </div>
+                                </li>
+                                <li class="ms-auto"><span class="counter text-info">911</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ============================================================== -->
+                <!-- IMPENDING APPOINTMENTS -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                        <div class="white-box">
+                            <div class="d-md-flex mb-3">
+                                <h3 class="box-title mb-0">Impending Appointments</h3>
+                                <div class="col-md-3 col-sm-4 col-xs-6 ms-auto">
+                                    <select class="form-select shadow-none row border-top">
+                                        <option>March 2021</option>
+                                        <option>April 2021</option>
+                                        <option>May 2021</option>
+                                        <option>June 2021</option>
+                                        <option>July 2021</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table no-wrap">
+                                    <thead>
+                                        <tr>
+                                            <th class="border-top-0">#</th>
+                                            <th class="border-top-0">Name</th>
+                                            <th class="border-top-0">Gender</th>
+                                            <th class="border-top-0">Date</th>
+                                            <th class="border-top-0">Age</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="txt-oflo">JATIN</td>
+                                            <td>MALE</td>
+                                            <td class="txt-oflo">April 18, 2021</td>
+                                            <td>24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="txt-oflo">KISHAN</td>
+                                            <td>MALE</td>
+                                            <td class="txt-oflo">April 19, 2021</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="txt-oflo">SONAKSHI</td>
+                                            <td>FEMALE</td>
+                                            <td class="txt-oflo">April 19, 2021</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td class="txt-oflo">ADITYA</td>
+                                            <td>MALE</td>
+                                            <td class="txt-oflo">April 20, 2021</td>
+                                            <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td class="txt-oflo">DURGA</td>
+                                            <td>FEMALE</td>
+                                            <td class="txt-oflo">April 21, 2021</td>
+                                            <td>16</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td class="txt-oflo">KHUSHI</td>
+                                            <td>FEMALE</td>
+                                            <td class="txt-oflo">April 23, 2021</td>
+                                            <td>30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td class="txt-oflo">DHANRAJ</td>
+                                            <td>MALE</td>
+                                            <td class="txt-oflo">April 22, 2021</td>
+                                            <td><!--<span class="text-success">-->20<!--</span>--></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Appointments -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- .col -->
+                    <div class="col-md-4 col-lg-12 col-sm-12">
+                        <div class="card white-box p-0">
+                            <div class="card-body">
+                                <h3 class="box-title mb-0">Recent Patients</h3>
+                            </div>
+                            <div class="comment-widgets">
+                                <!-- Comment Row -->
+                                <div class="d-flex flex-row comment-row p-3 mt-0">
+                                    <!--<div class="p-2"><img src="../../static/plugins/images/users/varun.jpg" alt="user" width="50" class="rounded-circle"></div>-->
+                                    <div class="comment-text ps-2 ps-md-3 w-100">
+
+
+
+
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-12 col-sm-12">
+                                                <div class="white-box">
+                                                    <div class="d-md-flex mb-3">
+                                                        <h3 class="box-title mb-0">Recent Patients</h3>
+                                                        <div class="col-md-3 col-sm-4 col-xs-6 ms-auto">
+                                                            <select class="form-select shadow-none row border-top">
+                                                                <option>March 2021</option>
+                                                                <option>April 2021</option>
+                                                                <option>May 2021</option>
+                                                                <option>June 2021</option>
+                                                                <option>July 2021</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-responsive">
+                                                        <table class="table no-wrap">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="border-top-0">#</th>
+                                                                    <th class="border-top-0">Name</th>
+                                                                    <th class="border-top-0">Gender</th>
+                                                                    <th class="border-top-0">Date</th>
+                                                                    <th class="border-top-0">Age</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td class="txt-oflo">JATIN</td>
+                                                                    <td>MALE</td>
+                                                                    <td class="txt-oflo">April 18, 2021</td>
+                                                                    <td>24</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td class="txt-oflo">KISHAN</td>
+                                                                    <td>MALE</td>
+                                                                    <td class="txt-oflo">April 19, 2021</td>
+                                                                    <td>25</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td class="txt-oflo">SONAKSHI</td>
+                                                                    <td>FEMALE</td>
+                                                                    <td class="txt-oflo">April 19, 2021</td>
+                                                                    <td>22</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td class="txt-oflo">ADITYA</td>
+                                                                    <td>MALE</td>
+                                                                    <td class="txt-oflo">April 20, 2021</td>
+                                                                    <td>22</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>5</td>
+                                                                    <td class="txt-oflo">DURGA</td>
+                                                                    <td>FEMALE</td>
+                                                                    <td class="txt-oflo">April 21, 2021</td>
+                                                                    <td>16</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>6</td>
+                                                                    <td class="txt-oflo">KHUSHI</td>
+                                                                    <td>FEMALE</td>
+                                                                    <td class="txt-oflo">April 23, 2021</td>
+                                                                    <td>30</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>7</td>
+                                                                    <td class="txt-oflo">DHANRAJ</td>
+                                                                    <td>MALE</td>
+                                                                    <td class="txt-oflo">April 22, 2021</td>
+                                                                    <td><!--<span class="text-success">-->20<!--</span>--></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                            
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="card white-box p-0">
+                            <div class="card-heading">
+                                <h3 class="box-title mb-0">NEWS</h3>
+                            </div>
+                            <div class="card-body">
+                    
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <img class="card-img-top" alt="Bootstrap Thumbnail First" src="../../static/plugins/images/1.jpg" />
+                                                    <div class="card-block">
+                                                        <h5 class="card-title">
+                                                            <b>
+                                                            Ageless Immune System
+                                                            </b>
+                                                        </h5>
+                                                        <p class="card-text">
+                                                            One of the most important ways you can strengthen your longevity is by boosting your immune system.
+                                                        </p>
+                                                        <p>
+                                                            <a class="btn btn-primary" href="https://www.raadfest.com/raad-fest//ageless-immune-system">Read More</a> 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <img class="card-img-top" alt="Bootstrap Thumbnail Second" src="../../static/plugins/images/2.png" />
+                                                    <div class="card-block">
+                                                        <h5 class="card-title">
+                                                            <b>Autophagy and fasting– not eating can feed your longevity</b>
+                                                        </h5>
+                                                        <p class="card-text">
+                                                            When people think they can’t afford to take action for their longevity, they need to think about autophagy and fasting.
+                                                        </p>
+                                                        <p>
+                                                            <a class="btn btn-primary" href="https://www.raadfest.com/raad-fest/autophagy-and-fasting-feed-your-longevit">Read More</a> 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card">
+                                                    <img class="card-img-top" alt="Bootstrap Thumbnail Third" src="../../static/plugins/images/3.png" />
+                                                    <div class="card-block">
+                                                        <h5 class="card-title">
+                                                            <b>Blue zone diet may help fight the aging blues</b>
+                                                        </h5>
+                                                        <p class="card-text">
+                                                            Whether you’re interested in the blue zone diet or some other diet, it’s vital to get good overall context for your food choices and that’s what RAADfest is all about. 
+                                                        </p>
+                                                        <p>
+                                                            <a class="btn btn-primary" href="https://www.raadfest.com/raad-fest//blue-zone-diet-may-help-fight-the-aging-blues">Read More</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                          
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center"> 2021 © SmartMedX brought to you by <a
+                    href="https://www.SmartMedX.com/">SmartMedX.com</a>
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../../static/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../static/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../static/js/app-style-switcher.js"></script>
+    <script src="../../static/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!--Wave Effects -->
+    <script src="../../static/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../../static/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../../static/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../../static/plugins/bower_components/chartist/dist/chartist.min.js"></script>
+    <script src="../../static/plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../static/js/pages/dashboards/dashboard1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+
+</html>
