@@ -86,10 +86,10 @@ def handlelogin(request):
         if user is not None:
             login(request, user)
             messages.success(request, "SuccessFully Logged in")
-            return redirect('user-index',names=loginusername)
-            if 'Doctor' in user.groups:
+            #return redirect('user-index',names=loginusername)
+            if 'Doctor' in user.groups.all():
                 print('Doctor')
-                return HttpResponseRedirect(reverse('user-index', names='hello'))
+                return redirect('user-index',names=loginusername)
             else:
                 st = '/user/'+loginusername
                 print('User')
