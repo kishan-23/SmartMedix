@@ -18,5 +18,6 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('', views.index, name="doctor-index")
+    path('', views.index, name="doctor-index"),
+    path('article/', views.article, name="doctor-article")
 ]
